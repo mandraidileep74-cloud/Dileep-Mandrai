@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name | Résumé</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #0d1b2a;
+      --card: #1b263b;
+      --accent: #415a77;
+      --text: #e0e1dd;
+      --highlight: #778da9;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a {
+      color: var(--highlight);
+      text-decoration: none;
+    }
+    header {
+      background: var(--card);
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: .85;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding-bottom: .25rem;
+    }
+    .education, .experience, .skills, .projects {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+    .skills span {
+      display: inline-block;
+      background: var(--accent);
+      padding: .35rem .75rem;
+      margin: .25rem .15rem;
+      border-radius: 4px;
+      font-size: .9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: .9rem;
+      opacity: .7;
+    }
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+      }
+      header, section {
+        background: none;
+        color: #000;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Your Name</h1>
+  <p>Computer Science Student &nbsp;&bull;&nbsp; City, Country &nbsp;&bull;&nbsp; <a href="mailto:you@email.com">you@email.com</a></p>
+</header>
+
+<div class="container">
+
+  <section class="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Technology in Computer Science</strong> — XYZ University (2021 – 2025)<br>
+    Relevant Coursework: Data Structures, Algorithms, DBMS, Operating Systems, Machine Learning</p>
+  </section>
+
+  <section class="experience">
+    <h2>Experience / Internships</h2>
+    <p><strong>Software Engineering Intern</strong> — ABC Tech Solutions (Jun 2023 – Aug 2023)<br>
+    Built a REST API using Node.js & MongoDB that reduced report-generation time by 40 %.</p>
+  </section>
+
+  <section class="projects">
+    <h2>Academic Projects</h2>
+    <ul style="margin-left: 1.2rem;">
+      <li><strong>Campus Eats:</strong> React-Native food-delivery app with real-time order tracking.</li>
+      <li><strong>Study-Buddy:</strong> AI-powered schedule generator using Python & OpenAI API.</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>C++</span>
+    <span>React</span>
+    <span>Node.js</span>
+    <span>Git</span>
+    <span>MongoDB</span>
+    <span>HTML/CSS</span>
+  </section>
+
+</div>
+
+<footer>
+  Built with ❤️ by Your Name &mdash; <a href="https://github.com/yourusername" target="_blank">GitHub</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+</footer>
+
+</body>
+</html>
